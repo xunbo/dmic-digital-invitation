@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ENERGY HEALTH · 数字邀请函</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <video
+        id="hero-video"
+        src="./rotating-body.mp4"
+        muted
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        disablepictureinpicture
+      ></video>
+      <canvas id="gl"></canvas>
+      <div class="veil"></div>
+      <div class="grain"></div>
+      <div class="vignette"></div>
+
+      <header class="brand-mark" data-mark>
+        <img src="./logo.svg" alt="ENERGY HEALTH" width="347" height="50">
+      </header>
+
+      <aside class="progress" aria-hidden="true">
+        <i data-bar></i>
+      </aside>
+
+      <div id="copy-layer" class="copy-stack">
+        <article class="card" data-beat="open">
+          <h2>先知一步<br>胜人一筹</h2>
+          <p>瑞金数字人邀您<br>开启全新健康人生</p>
+        </article>
+        <article class="card" data-beat="leaf">
+          <h2>首创健康深检</h2>
+        </article>
+        <article class="card" data-beat="human">
+          <h2>创新数字人范式</h2>
+        </article>
+        <article class="card" data-beat="swirl">
+          <h2>重掌健康人生</h2>
+        </article>
+        <article class="card" data-beat="origin">
+          <h2>源自瑞金<br>医学体系</h2>
+          <ul>
+            <li>国家代谢性疾病临床医学研究中心</li>
+            <li>DMIC 数字医学创新中心</li>
+            <li>数字化能量代谢监测平台</li>
+          </ul>
+        </article>
+        <article class="card" data-beat="scan-1">
+          <h2>全球首台<br>光子扫描</h2>
+        </article>
+        <article class="card" data-beat="scan-2">
+          <h2>全新数字<br>检测平台</h2>
+        </article>
+        <article class="card" data-beat="scan-3">
+          <h2>三天<br>酒店式入驻</h2>
+        </article>
+        <article class="card" data-beat="scan-4">
+          <h2>全程1v1<br>顾问陪伴</h2>
+        </article>
+        <article class="card" data-beat="scan-5">
+          <h2>建立专属<br>数字人资产</h2>
+        </article>
+        <article class="card" data-beat="scan-6">
+          <h2>专家团队<br>提早干预</h2>
+        </article>
+        <article class="card" data-beat="scan-7">
+          <h2>数字健康管理<br>护航健康人生</h2>
+        </article>
+      </div>
+
+      <main>
+        <section id="hero" class="chapter hero" data-chapter="hero">
+          <div class="hero-cue" data-cue>
+            <em data-idle>点击开启</em>
+            <em data-scroll>下滑开启</em>
+            <i></i>
+          </div>
+        </section>
+
+        <section id="open" class="chapter pin" data-chapter="open"></section>
+        <section id="story" class="chapter pin" data-chapter="story"></section>
+        <section id="scan" class="chapter pin" data-chapter="scan"></section>
+
+        <section id="invite" class="chapter pin" data-chapter="invite">
+          <div class="finale-screen">
+            <img class="finale-logo" src="./logo.svg" alt="ENERGY HEALTH" width="347" height="50" data-beat="finale">
+            <a class="cta-orb" href="#contact" data-beat="finale">马上联系<br>专属顾问<br>了解</a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
